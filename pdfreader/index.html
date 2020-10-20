@@ -2,7 +2,7 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Sneikkimies Novel Translations | Translating light novels from Japanese to English for everyone to enjoy.</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Sneikkimies Novel Translations" />
@@ -12,10 +12,8 @@
 <link rel="canonical" href="/pdfreader/" />
 <meta property="og:url" content="/pdfreader/" />
 <meta property="og:site_name" content="Sneikkimies Novel Translations" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Sneikkimies Novel Translations" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"/pdfreader/","headline":"Sneikkimies Novel Translations","description":"Translating light novels from Japanese to English for everyone to enjoy.","@context":"https://schema.org"}</script>
+{"url":"/pdfreader/","@type":"WebPage","description":"Translating light novels from Japanese to English for everyone to enjoy.","headline":"Sneikkimies Novel Translations","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Sneikkimies Novel Translations" /></head>
 <body><header class="site-header" role="banner">
@@ -67,17 +65,43 @@ window.onload = function() {
 	else{
 		console.log("Error. Target url not found:", url)
 	}
+       
 }
 
 function resizeIframe(id) {
-	document.getElementById(id).style.height = window.innerHeight - 61.94 - 70*2 + "px"
+	document.getElementById(id).height = window.innerHeight + "px"
 }
 
 window.addEventListener("resize", function(){resizeIframe('pdfreader')})
 
 </script>
 
+<style>
+#divwrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 100vh;
+    top: 0px
+}
+
+#pdfreader {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px
+}
+
+.post-content {
+    margin-bottom: 0px
+}
+
+.page-content {
+    padding-bottom: 0px
+}
+</style>
+
+<div id="divwrapper">
 <iframe id="pdfreader" src="" width="100%" height="100%" onload="resizeIframe('pdfreader')" />
+</div>
 
 
   </div>
