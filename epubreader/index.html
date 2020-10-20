@@ -67,13 +67,6 @@ window.onload = function() {
 	}
 }
 
-function resizeIframe(id) {
-	document.getElementById(id).style.height = window.innerHeight - 61.94 - 70*2 + "px"
-    console.log(document.getElementById(id).style.height, document.getElementById(id).style.width)
-}
-
-window.addEventListener("resize", function(){resizeIframe('pdfreader')})
-
 </script>
 
 <iframe id="pdfreader" src="" width="100%" height="100%" onload="resizeIframe('pdfreader')" />
