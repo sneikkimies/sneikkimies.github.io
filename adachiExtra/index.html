@@ -106,6 +106,21 @@
 </style>
 
 <script>
+
+urlParams = new URLSearchParams(window.location.search)
+
+window.onload = function() {
+
+	url = urlParams.get("target")
+	if(url){
+		updateTxt("txtReader", url)
+	}
+	else{
+		console.log("Error. Target url not found:", url)
+	}
+       
+}
+
 function updateTxt(id,index) {
 
     var txtList = {}
@@ -113,8 +128,7 @@ function updateTxt(id,index) {
     
     
     
-    txtList["qa1"] = `
-Q1 - What is the most important thing for a protagonist to possess?
+    txtList["qa1"] = `Q1 - What is the most important thing for a protagonist to possess?
 Shimamura: Sociability. Often, they're the head of the classroom.
 Adachi: A unique name, I guess.
 
@@ -154,7 +168,7 @@ S: Get a job.
 A: Get a job.
 
 Q10 - You find yourself having fallen in love with a certain girl. What do you do?
-S: Umm, why Adachi acting all weird?
+S: Umm, why is Adachi acting all weird?
 A: *Panicking*.
 
 Q11 - Someone comes in and steals your favourite food that you were saving to eat last. What do you do?
@@ -168,8 +182,7 @@ A: Ask Shimamura for advice.
 Q13 - Describe your enthusiasm towards the next release in your series.
 S: Next up would be Valentine's Day, right? Hmm... That doesn't really have anything to do with me, I don't think.
 A: Ch-Chocolate?
-
-        `
+`
 
     
     
